@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=catthis
+Comment=catthis P2P Cryptocurrency
+Comment[fr]=catthis, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=catthis, eşten eşe kriptografik sanal para birimi
+Exec=catthis-qt %u
+Terminal=false
+Type=Application
+Icon=catthis128
+MimeType=x-scheme-handler/catthis;
+Categories=Office;Finance;
