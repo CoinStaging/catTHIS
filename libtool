@@ -1,6 +1,5 @@
 #! /bin/bash
 # Generated automatically by config.status (catthis) 1.0.0
-# Libtool was configured on host CDC-BlockExplorer:
 # NOTE: Changes made to this file will be lost: look at ltmain.sh.
 
 # Provide generalized library-building support services.
@@ -91,7 +90,7 @@ EGREP="/bin/grep -E"
 FGREP="/bin/grep -F"
 
 # A BSD- or MS-compatible name lister.
-NM="/root/depends/x86_64-apple-darwin14/native/bin/x86_64-apple-darwin14-nm"
+NM="/home/depends/x86_64-apple-darwin14/native/bin/x86_64-apple-darwin14-nm"
 
 # Whether we need soft or hard links.
 LN_S="ln -s"
@@ -142,7 +141,7 @@ DLLTOOL="false"
 sharedlib_from_linklib_cmd="printf %s\\n"
 
 # The archiver.
-AR="/root/depends/x86_64-apple-darwin14/native/bin/x86_64-apple-darwin14-ar"
+AR="/home/depends/x86_64-apple-darwin14/native/bin/x86_64-apple-darwin14-ar"
 
 # Flags to create an archive.
 AR_FLAGS="cru"
@@ -151,10 +150,10 @@ AR_FLAGS="cru"
 archiver_list_spec=""
 
 # A symbol stripping program.
-STRIP="/root/depends/x86_64-apple-darwin14/share/../native/bin/x86_64-apple-darwin14-strip"
+STRIP="/home/depends/x86_64-apple-darwin14/share/../native/bin/x86_64-apple-darwin14-strip"
 
 # Commands used to install an old-style archive.
-RANLIB="/root/depends/x86_64-apple-darwin14/native/bin/x86_64-apple-darwin14-ranlib"
+RANLIB="/home/depends/x86_64-apple-darwin14/native/bin/x86_64-apple-darwin14-ranlib"
 old_postinstall_cmds="chmod 644 \$oldlib~\$RANLIB \$tool_oldlib"
 old_postuninstall_cmds=""
 
@@ -162,7 +161,7 @@ old_postuninstall_cmds=""
 lock_old_archive_extraction=yes
 
 # A C compiler.
-LTCC="/root/depends/x86_64-apple-darwin14/share/../native/bin/ccache /root/depends/x86_64-apple-darwin14/native/bin/clang -target x86_64-apple-darwin14 -mmacosx-version-min=10.8 --sysroot /root/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9"
+LTCC="/home/depends/x86_64-apple-darwin14/share/../native/bin/ccache /home/depends/x86_64-apple-darwin14/native/bin/clang -target x86_64-apple-darwin14 -mmacosx-version-min=10.8 --sysroot /home/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9"
 
 # LTCC compiler flags.
 LTCFLAGS="-pipe -O2 "
@@ -216,7 +215,7 @@ NMEDIT="x86_64-apple-darwin14-nmedit"
 LIPO="x86_64-apple-darwin14-lipo"
 
 # ldd/readelf like tool for Mach-O binaries on Mac OS X.
-OTOOL="/root/depends/x86_64-apple-darwin14/share/../native/bin/x86_64-apple-darwin14-otool"
+OTOOL="/home/depends/x86_64-apple-darwin14/share/../native/bin/x86_64-apple-darwin14-otool"
 
 # ldd/readelf like tool for 64 bit Mach-O binaries on Mac OS X 10.4.
 OTOOL64=":"
@@ -282,7 +281,7 @@ finish_eval=""
 hardcode_into_libs=no
 
 # Compile-time system search path for libraries.
-sys_lib_search_path_spec="/root/depends/x86_64-apple-darwin14/native/lib/clang/4.0.0  /usr/local/lib"
+sys_lib_search_path_spec="/home/depends/x86_64-apple-darwin14/native/lib/clang/4.0.0  /usr/local/lib"
 
 # Detected run-time system search path for libraries.
 sys_lib_dlsearch_path_spec="/usr/local/lib /lib /usr/lib"
@@ -305,7 +304,7 @@ striplib="x86_64-apple-darwin14-strip -x"
 
 
 # The linker used to build libraries.
-LD="/root/depends/x86_64-apple-darwin14/native/bin/x86_64-apple-darwin14-ld"
+LD="/home/depends/x86_64-apple-darwin14/native/bin/x86_64-apple-darwin14-ld"
 
 # How to create reloadable object files.
 reload_flag=" -r"
@@ -315,7 +314,7 @@ reload_cmds="\$LTCC \$LTCFLAGS -nostdlib \$wl-r -o \$output\$reload_objs"
 old_archive_cmds="\$AR \$AR_FLAGS \$oldlib\$oldobjs~\$RANLIB \$tool_oldlib"
 
 # A language specific compiler.
-CC="/root/depends/x86_64-apple-darwin14/native/bin/clang -target x86_64-apple-darwin14 -mmacosx-version-min=10.8 --sysroot /root/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9"
+CC="/home/depends/x86_64-apple-darwin14/native/bin/clang -target x86_64-apple-darwin14 -mmacosx-version-min=10.8 --sysroot /home/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9"
 
 # Is the compiler the GNU compiler?
 with_gcc=yes
@@ -540,7 +539,7 @@ func_cc_basename ()
 
 PROGRAM=libtool
 PACKAGE=libtool
-VERSION="2.4.6 Debian-2.4.6-0.1"
+VERSION="2.4.6 Debian-2.4.6-2"
 package_revision=2.4.6
 
 
@@ -2577,7 +2576,7 @@ include the following information:
        compiler:       $LTCC
        compiler flags: $LTCFLAGS
        linker:         $LD (gnu? $with_gnu_ld)
-       version:        $progname (GNU libtool) 2.4.6
+       version:        $progname $scriptversion Debian-2.4.6-2
        automake:       `($AUTOMAKE --version) 2>/dev/null |$SED 1q`
        autoconf:       `($AUTOCONF --version) 2>/dev/null |$SED 1q`
 
@@ -11667,7 +11666,7 @@ build_old_libs=`case $build_libtool_libs in yes) echo no;; *) echo yes;; esac`
 # ### BEGIN LIBTOOL TAG CONFIG: CXX
 
 # The linker used to build libraries.
-LD="/root/depends/x86_64-apple-darwin14/native/bin/x86_64-apple-darwin14-ld"
+LD="/home/depends/x86_64-apple-darwin14/native/bin/x86_64-apple-darwin14-ld"
 
 # How to create reloadable object files.
 reload_flag=" -r"
@@ -11677,7 +11676,7 @@ reload_cmds="\$LTCC \$LTCFLAGS -nostdlib \$wl-r -o \$output\$reload_objs"
 old_archive_cmds="\$AR \$AR_FLAGS \$oldlib\$oldobjs~\$RANLIB \$tool_oldlib"
 
 # A language specific compiler.
-CC="/root/depends/x86_64-apple-darwin14/native/bin/clang++ -target x86_64-apple-darwin14 -mmacosx-version-min=10.8 --sysroot /root/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11"
+CC="/home/depends/x86_64-apple-darwin14/native/bin/clang++ -target x86_64-apple-darwin14 -mmacosx-version-min=10.8 --sysroot /home/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11"
 
 # Is the compiler the GNU compiler?
 with_gcc=yes

@@ -10,11 +10,11 @@ SetCompressor /SOLID lzma
 !define URL https://www.catthis.org
 
 # MUI Symbol Definitions
-!define MUI_ICON "/root/catTHIS/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/root/catTHIS/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/catTHIS/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/catTHIS/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/root/catTHIS/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/catTHIS/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
@@ -22,7 +22,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "catTHIS Core"
 !define MUI_FINISHPAGE_RUN $INSTDIR\catthis-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/root/catTHIS/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/catTHIS/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,7 +48,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /root/catTHIS/catthis-${VERSION}-win-setup.exe
+OutFile /home/catTHIS/catthis-${VERSION}-win-setup.exe
 !if "" == "64"
 InstallDir $PROGRAMFILES64\catthis
 !else
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /root/catTHIS/release/catthis-qt
-    File /oname=COPYING.txt /root/catTHIS/COPYING
-    File /oname=readme.txt /root/catTHIS/doc/README_windows.txt
+    File /home/catTHIS/release/catthis-qt
+    File /oname=COPYING.txt /home/catTHIS/COPYING
+    File /oname=readme.txt /home/catTHIS/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /root/catTHIS/release/catthisd
-    File /root/catTHIS/release/catthis-cli
+    File /home/catTHIS/release/catthisd
+    File /home/catTHIS/release/catthis-cli
     SetOutPath $INSTDIR\doc
-    File /r /root/catTHIS/doc\*.*
+    File /r /home/catTHIS/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd

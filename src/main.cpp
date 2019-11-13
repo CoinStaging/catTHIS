@@ -3921,7 +3921,7 @@ bool IsDevFeeValid(const CBlock& block, int nBlockHeight)
                 CAmount blockValue = GetBlockValue(nBlockHeight);
                 CAmount devfee = 0;
                 if(nBlockHeight >= 260000){
-                   devfee = blockValue * 0.10; //10%
+                   devfee = blockValue * 0.01; //10%
                 }
                 else{
                    devfee = blockValue * 0; //0%
