@@ -36,7 +36,7 @@ then
   cd
 
   catthis-cli stop
-  wget https://github.com/catthis88/catTHIS/releases/download/v1.0.0.0/Linux.zip
+  wget https://github.com/catthis88/catTHIS/releases/download/v1.0.0.1/Linux.zip
   unzip Linux.zip
   chmod +x Linux/bin/*
   sudo mv  Linux/bin/* /usr/local/bin
