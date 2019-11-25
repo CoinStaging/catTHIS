@@ -1360,7 +1360,7 @@ CC = /home/depends/x86_64-apple-darwin14/share/../native/bin/ccache /home/depend
 CCACHE = /home/depends/x86_64-apple-darwin14/share/../native/bin/ccache
 CCDEPMODE = depmode=gcc3
 CFLAGS = -pipe -O2 
-CLIENT_VERSION_BUILD = 0
+CLIENT_VERSION_BUILD = 1
 CLIENT_VERSION_IS_RELEASE = true
 CLIENT_VERSION_MAJOR = 1
 CLIENT_VERSION_MINOR = 0

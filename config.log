@@ -1729,7 +1729,7 @@ configure:22141: checking for library containing getaddrinfo_a
 configure:22172: /home/depends/x86_64-apple-darwin14/native/bin/clang++ -target x86_64-apple-darwin14 -mmacosx-version-min=10.8 --sysroot /home/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11 -o conftest -pipe -O2   -Wstack-protector -fstack-protector-all -fPIC -I/home/depends/x86_64-apple-darwin14/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -DMAC_OSX  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -L/home/depends/x86_64-apple-darwin14/share/../lib  -Wl,-headerpad_max_install_names  -Wl,-dead_strip conftest.cpp  >&5
 Undefined symbols for architecture x86_64:
   "_getaddrinfo_a", referenced from:
-      _main in conftest-01e710.o
+      _main in conftest-fb128a.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:22172: $? = 1
@@ -2432,7 +2432,7 @@ configure:22401: checking for library containing clock_gettime
 configure:22432: /home/depends/x86_64-apple-darwin14/native/bin/clang++ -target x86_64-apple-darwin14 -mmacosx-version-min=10.8 --sysroot /home/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11 -o conftest -pipe -O2   -Wstack-protector -fstack-protector-all -fPIC -I/home/depends/x86_64-apple-darwin14/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -DMAC_OSX  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -L/home/depends/x86_64-apple-darwin14/share/../lib  -Wl,-headerpad_max_install_names  -Wl,-dead_strip conftest.cpp  >&5
 Undefined symbols for architecture x86_64:
   "_clock_gettime", referenced from:
-      _main in conftest-285592.o
+      _main in conftest-1b9331.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:22432: $? = 1
@@ -4004,6 +4004,7 @@ config.status:1412: creating qa/pull-tester/run-bitcoind-for-test.sh
 config.status:1412: creating qa/pull-tester/tests-config.sh
 config.status:1412: creating contrib/devtools/split-debug.sh
 config.status:1412: creating src/config/catthis-config.h
+config.status:1593: src/config/catthis-config.h is unchanged
 config.status:1641: executing depfiles commands
 config.status:1641: executing libtool commands
 configure:32191: === configuring in src/secp256k1 (/home/catTHIS/src/secp256k1)
@@ -4356,7 +4357,7 @@ CC='/home/depends/x86_64-apple-darwin14/share/../native/bin/ccache /home/depends
 CCACHE='/home/depends/x86_64-apple-darwin14/share/../native/bin/ccache'
 CCDEPMODE='depmode=gcc3'
 CFLAGS='-pipe -O2 '
-CLIENT_VERSION_BUILD='0'
+CLIENT_VERSION_BUILD='1'
 CLIENT_VERSION_IS_RELEASE='true'
 CLIENT_VERSION_MAJOR='1'
 CLIENT_VERSION_MINOR='0'
@@ -4665,7 +4666,7 @@ target_alias=''
 #define CLIENT_VERSION_MAJOR 1
 #define CLIENT_VERSION_MINOR 0
 #define CLIENT_VERSION_REVISION 0
-#define CLIENT_VERSION_BUILD 0
+#define CLIENT_VERSION_BUILD 1
 #define CLIENT_VERSION_IS_RELEASE true
 #define COPYRIGHT_YEAR 2019
 
