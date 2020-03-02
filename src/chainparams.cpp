@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2019 The Catthis developers
+// Copyright (c) 2020 The Catthis developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -59,10 +59,21 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x0000000ed25232c2c2057359a16431665d99301ea6890adbb6f36b64c3d291d9"));
+    (0, uint256("0x0000000ed25232c2c2057359a16431665d99301ea6890adbb6f36b64c3d291d9"))
+	(10000, uint256("0xacb36df9fab8220ff06c70226095ae2e85b558c6eb10c989fd07eddd82babaf0"))
+	(50000, uint256("0xe1d31d625dfdbb1210fdd5bb7fc948942f36559b7742ed2e3510235ac3d7d20d"))
+	(70000, uint256("0xcffc6b0fa38439fe009f651530e4b19b7f3e5f3e90a8caa6ad98599346eb0585"))
+	(100000, uint256("0x0909f55563dccf8f9e9bbc2da88437af344c9158fb26e5d43b30f0681f11ed8b"))
+	(150000, uint256("0x39ebf64c7398aa5adc636ad8d75c646315f67eba032c6d004c2b93eb1e1b93ab"))
+	(200000, uint256("0xc1d138c3b2d360ddc063536704bb7ad5a4d39202be7f6aeafc739b201f5f37c5"))
+	(250000, uint256("0x81f2514ef8e20a68d1068599ae75505067163d6750852ea7df27bd4332ea5412"))
+	(300000, uint256("0xc3d506f01ec72092b17150a8d2ae889e2c2b83d05c20453f0ba8ee91f55fa569"))
+	(350000, uint256("0x262517b0e4b86bf30f5220fb85389b7e3a4e4b1eb8642a3397db5cf21805cfd4"))
+	(400000, uint256("0x356b730f7fa2e68eb220297711559782a12905090d5a02929f35e2fe5386ae08"))
+	(420000, uint256("0xc28c90061c7ba6daaf7468db100c94df9ae73f3ec1cb47b12ed383aaed7edff7"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1533968405, // * UNIX timestamp of last checkpoint block
+	1583072714, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     1440        // * estimated number of transactions per day after checkpoint
@@ -162,6 +173,7 @@ public:
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 929949;
 
+		/*
         hashGenesisBlock = uint256("0x0000000ed25232c2c2057359a16431665d99301ea6890adbb6f36b64c3d291d9");
         if (false && genesis.GetHash() != hashGenesisBlock)
         {
@@ -178,6 +190,7 @@ public:
             std::cout << nNoncenew << '\n';
             printf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
         }
+		*/
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000428798068ac02bb93708347ffe790cf5755fcf7ffac2dc0f61db7ff8149"));
@@ -213,7 +226,7 @@ public:
 
         nPoolMaxTransactions = 3;
         //strSporkKey = "0459eede7626441f7802af2736cb3a4aeb3e1f95070cde39d068a4f16525ee8fdd3c075f29f9e115aeb91952239194aa6ac19765574fed8a0d7f174f2b450e9630";
-		    strSporkKey = "03d1a6656a67f078d52791b51ea8e246b3b542b22ebaa15e55c0ba3453b74e01f5";
+		strSporkKey = "03d1a6656a67f078d52791b51ea8e246b3b542b22ebaa15e55c0ba3453b74e01f5";
         strObfuscationPoolDummyAddress = "CaJAo1A7gPBftYSHywtBN7XRfHTWWQeJm4";
         nStartMasternodePayments = 1557419262 + 1000; //Wed, 25 Jun 2014 20:36:16 GMT
 

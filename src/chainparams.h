@@ -99,7 +99,7 @@ public:
     CBaseChainParams::Network NetworkID() const { return networkID; }
 
     static std::string GetDevFeeRewardAddress();
- static CScript GetScriptForDevFeeDestination();
+	static CScript GetScriptForDevFeeDestination();
 
     /** Zerocoin **/
     std::string Zerocoin_Modulus() const { return zerocoinModulus; }

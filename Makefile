@@ -280,7 +280,7 @@ CLIENT_VERSION_MAJOR = 1
 CLIENT_VERSION_MINOR = 0
 CLIENT_VERSION_REVISION = 0
 COMPARISON_TOOL_REORG_TESTS = 0
-COPYRIGHT_YEAR = 2019
+COPYRIGHT_YEAR = 2020
 CPP = /home/depends/x86_64-apple-darwin14/native/bin/clang -target x86_64-apple-darwin14 -mmacosx-version-min=10.8 --sysroot /home/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -E
 CPPFILT = /usr/bin/c++filt
 CPPFLAGS = -Qunused-arguments -I/home/depends/x86_64-apple-darwin14/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -DMAC_OSX  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5
