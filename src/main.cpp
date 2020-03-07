@@ -3920,12 +3920,13 @@ bool IsDevFeeValid(const CBlock& block, int nBlockHeight)
 
                 CAmount blockValue = GetBlockValue(nBlockHeight);
                 CAmount devfee = 0;
-                if(nBlockHeight >= 260000){
-                   devfee = blockValue * 0.01; //10%
-                }
-                else{
-                   devfee = blockValue * 0; //0%
-                }
+                if(ActiveProtocol() == 70010 && nBlockHeight >= 260000){
+                   devfee = blockValue * 0.10; //10%
+                }else if (ActiveProtocol() > 70010 && nBlockHeight >= 260000 && IsSporkActive(SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3)) {
+                   devfee = blockValue * 0; //0% Turn off dev fee from previous dev
+				}else {
+					devfee = blockValue * 0; //0%
+				}
 
 
  				if(out.nValue >= devfee) {
